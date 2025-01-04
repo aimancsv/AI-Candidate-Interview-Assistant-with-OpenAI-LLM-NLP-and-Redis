@@ -1,0 +1,2 @@
+# AI-Candidate-Interview-Assistant-with-OpenAI-LLM-NLP-and-Redis
+This project uses OpenAI's LLM and NLP to streamline recruitment by automating interviews, analyzing candidate responses and assessing culture fit. Using Redis for real-time data handling, ensuring efficient processing, seamless interactions, and intelligent decision-making. Designed to modernize hiring, it offers actionable insights for recruiters
