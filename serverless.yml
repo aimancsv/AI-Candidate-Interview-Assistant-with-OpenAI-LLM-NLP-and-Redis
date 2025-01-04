@@ -1,0 +1,64 @@
+service: fastapi-redis-ecs
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-east-1
+
+custom:
+  ecsCluster: ${self:service}-cluster
+  ecsTaskDefinition: ${self:service}-task
+  ecsService: ${self:service}-service
+
+resources:
+  Resources:
+    EcsCluster:
+      Type: AWS::ECS::Cluster
+      Properties:
+        ClusterName: ${self:custom.ecsCluster}
+
+    EcsTaskDefinition:
+      Type: AWS::ECS::TaskDefinition
+      Properties:
+        Family: ${self:custom.ecsTaskDefinition}
+        Cpu: '256'
+        Memory: '512'
+        NetworkMode: awsvpc
+        RequiresCompatibilities:
+          - FARGATE
+        ContainerDefinitions:
+          - Name: ${self:service}
+            Image: ${env:ECR_IMAGE_URL}
+            PortMappings:
+              - ContainerPort: 8000
+            Environment:
+              - Name: REDIS_HOST
+                Value: ${env:REDIS_HOST}
+
+    EcsService:
+      Type: AWS::ECS::Service
+      Properties:
+        ServiceName: ${self:custom.ecsService}
+        Cluster:
+          Ref: EcsCluster
+        TaskDefinition:
+          Ref: EcsTaskDefinition
+        DesiredCount: 1
+        LaunchType: FARGATE
+        NetworkConfiguration:
+          AwsvpcConfiguration:
+            AssignPublicIp: ENABLED
+            Subnets:
+              - ${env:SUBNET_ID}
+            SecurityGroups:
+              - ${env:SECURITY_GROUP_ID}
+
+    RedisCache:
+      Type: AWS::ElastiCache::CacheCluster
+      Properties:
+        ClusterName: ${self:service}-redis
+        Engine: redis
+        CacheNodeType: cache.t3.micro
+        NumCacheNodes: 1
+        VpcSecurityGroupIds:
+          - ${env:REDIS_SECURITY_GROUP_ID}

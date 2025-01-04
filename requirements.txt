@@ -1,0 +1,10 @@
+openai
+fastapi
+uvicorn
+groq
+elevenlabs
+redis
+PyPDF2
+instructor
+tensorflow
+numpy

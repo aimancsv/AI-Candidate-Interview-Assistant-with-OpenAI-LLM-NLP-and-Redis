@@ -1,0 +1,244 @@
+{
+    "company_attributes": [
+        {
+            "name": "Autonomy",
+            "description": "The ability to work independently and make decisions without constant supervision.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Requires constant supervision and guidance.",
+                "max_description": "Highly self-directed and capable of working independently."
+            },
+            "company_score": 1,
+            "score_explanation": "The company values autonomy highly, as indicated by their emphasis on independence."
+        },
+        {
+            "name": "Bluntness",
+            "description": "The tendency to be straightforward and direct in communication.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Avoids direct communication and is often vague.",
+                "max_description": "Extremely straightforward and direct in communication."
+            },
+            "company_score": 1,
+            "score_explanation": "The company explicitly values bluntness, requiring employees to be straight to the point."
+        },
+        {
+            "name": "Ability to Take Feedback",
+            "description": "The capacity to accept and act on feedback constructively.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Resistant to feedback and unwilling to change.",
+                "max_description": "Highly receptive to feedback and willing to make changes."
+            },
+            "company_score": 1,
+            "score_explanation": "The company places a strong emphasis on the ability to take in feedback."
+        },
+        {
+            "name": "Adaptability",
+            "description": "The ability to adjust to new conditions and changes quickly.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Struggles with change and prefers routine.",
+                "max_description": "Highly adaptable and thrives in changing environments."
+            },
+            "company_score": 1,
+            "score_explanation": "Adaptability is a core value, essential for the fast-paced and dynamic work environment."
+        },
+        {
+            "name": "Agreeableness",
+            "description": "The tendency to be pleasant and accommodating in social situations.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Often confrontational and uncooperative.",
+                "max_description": "Highly cooperative and pleasant in social interactions."
+            },
+            "company_score": 0,
+            "score_explanation": "The company values bluntness over agreeableness, indicating a neutral stance."
+        },
+        {
+            "name": "Neuroticism",
+            "description": "The tendency to experience negative emotions easily.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Rarely experiences negative emotions.",
+                "max_description": "Frequently experiences negative emotions."
+            },
+            "company_score": -1,
+            "score_explanation": "The fast-paced and fun environment suggests a low tolerance for high neuroticism."
+        },
+        {
+            "name": "Conscientiousness",
+            "description": "The tendency to be organized and dependable.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Disorganized and unreliable.",
+                "max_description": "Highly organized and dependable."
+            },
+            "company_score": 0.5,
+            "score_explanation": "The environment is described as slightly messy, indicating moderate conscientiousness."
+        },
+        {
+            "name": "Openness to Experience",
+            "description": "Willingness to try new things and be intellectually curious.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Prefers routine and avoids new experiences.",
+                "max_description": "Highly curious and eager to try new things."
+            },
+            "company_score": 1,
+            "score_explanation": "The mission and vision require a high level of openness to new experiences."
+        },
+        {
+            "name": "Extraversion",
+            "description": "The tendency to seek stimulation in the company of others.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Prefers solitude and avoids social interactions.",
+                "max_description": "Highly sociable and seeks out social interactions."
+            },
+            "company_score": 0.5,
+            "score_explanation": "The fun environment suggests a moderate level of extraversion."
+        },
+        {
+            "name": "Introversion",
+            "description": "The tendency to be inwardly focused and less socially engaged.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Highly sociable and seeks out social interactions.",
+                "max_description": "Prefers solitude and avoids social interactions."
+            },
+            "company_score": -0.5,
+            "score_explanation": "The fun and fast-paced environment suggests a lower level of introversion."
+        },
+        {
+            "name": "Assertiveness",
+            "description": "Confidence in expressing one's thoughts and opinions.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Avoids expressing thoughts and opinions.",
+                "max_description": "Highly confident in expressing thoughts and opinions."
+            },
+            "company_score": 1,
+            "score_explanation": "Bluntness and direct communication require high assertiveness."
+        },
+        {
+            "name": "Passive-aggressiveness",
+            "description": "Indirect expression of hostility.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Direct and straightforward in communication.",
+                "max_description": "Often expresses hostility indirectly."
+            },
+            "company_score": -1,
+            "score_explanation": "The value of bluntness suggests a low tolerance for passive-aggressiveness."
+        },
+        {
+            "name": "Humility",
+            "description": "A modest view of one's own importance.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Highly self-important and arrogant.",
+                "max_description": "Modest and humble."
+            },
+            "company_score": 0.5,
+            "score_explanation": "The emphasis on feedback suggests a moderate level of humility."
+        },
+        {
+            "name": "Creativity",
+            "description": "The ability to think outside the box and generate innovative ideas.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Prefers conventional approaches.",
+                "max_description": "Highly innovative and creative."
+            },
+            "company_score": 1,
+            "score_explanation": "The mission and vision require high levels of creativity."
+        },
+        {
+            "name": "Risk-taking",
+            "description": "Willingness to take risks and face challenges.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Avoids risks and prefers safety.",
+                "max_description": "Highly willing to take risks."
+            },
+            "company_score": 1,
+            "score_explanation": "The mission to Mars and fast-paced environment require high risk-taking."
+        },
+        {
+            "name": "Teamwork",
+            "description": "The ability to work well with others.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Prefers to work alone and struggles with collaboration.",
+                "max_description": "Highly collaborative and works well in teams."
+            },
+            "company_score": 0.5,
+            "score_explanation": "The emphasis on autonomy suggests a balanced approach to teamwork."
+        },
+        {
+            "name": "Attention to Detail",
+            "description": "The ability to notice and consider small details.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Overlooks details and focuses on the big picture.",
+                "max_description": "Highly attentive to small details."
+            },
+            "company_score": 0,
+            "score_explanation": "The slightly messy environment suggests a neutral stance on attention to detail."
+        },
+        {
+            "name": "Resilience",
+            "description": "The ability to recover quickly from difficulties.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Struggles to recover from setbacks.",
+                "max_description": "Highly resilient and recovers quickly from difficulties."
+            },
+            "company_score": 1,
+            "score_explanation": "The fast-paced environment requires high resilience."
+        },
+        {
+            "name": "Work Ethic",
+            "description": "The belief in the value of hard work and diligence.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Lacks motivation and avoids hard work.",
+                "max_description": "Highly motivated and diligent."
+            },
+            "company_score": 1,
+            "score_explanation": "The fast-paced and quick-acting environment requires a strong work ethic."
+        },
+        {
+            "name": "Flexibility",
+            "description": "The ability to adapt to new situations and changes.",
+            "scale": {
+                "min": -1,
+                "max": 1,
+                "min_description": "Prefers routine and struggles with change.",
+                "max_description": "Highly adaptable and flexible."
+            },
+            "company_score": 1,
+            "score_explanation": "Flexibility is essential in the company's dynamic environment."
+        }
+    ]
+}
